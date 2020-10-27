@@ -1,15 +1,34 @@
+import icon from "./github.svg";
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
 
-function App(props: React.PropsWithChildren<{}>) {
+const App = (props: React.PropsWithChildren<{}>) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+    <div className="container">
+      <div className="terminal-nav">
+        <header className="terminal-logo">
+          <div className="logo terminal-prompt">
+            <a href="/" className="no-style">
+              _
+            </a>
+          </div>
+        </header>
+        <nav className="terminal-menu">
+          <ul>
+            <li>
+              <a
+                href="https://github.com/robertlonnqvist"
+                className="menu-item"
+              >
+                <span>
+                  <img src={icon} alt="github" />
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
