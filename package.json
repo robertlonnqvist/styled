@@ -42,6 +42,6 @@
     "lint": "eslint --ext .tsx --ext .ts src",
     "format": "prettier --write .",
     "predeploy": "npm run build && cp CNAME dist/CNAME",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   }
 }
