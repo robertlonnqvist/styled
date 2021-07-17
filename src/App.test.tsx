@@ -5,5 +5,5 @@ import App from "./App";
 test("renders learn react link", () => {
   const { container } = render(<App />);
   const linkElement = container.querySelector(".terminal-prompt");
-  expect(linkElement).toBeInTheDocument();
+  expect(linkElement).toBeDefined();
 });

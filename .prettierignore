@@ -1,0 +1,9 @@
+# Ignore artifacts:
+.idea/
+*.iml
+node_modules/
+npm-debug.log
+.DS_Store
+dist/
+.scannerwork/
+coverage/

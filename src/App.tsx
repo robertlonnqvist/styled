@@ -1,7 +1,7 @@
 import icon from "./github.svg";
 import React from "react";
 
-const App = (_: React.PropsWithChildren<unknown>) => {
+const App = (): JSX.Element => {
   return (
     <div className="container">
       <div className="terminal-nav">
