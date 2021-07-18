@@ -3,120 +3,213 @@
 exports[`renders CV component 1`] = `
 <div>
   <div
-    class="container"
+    class="container mx-auto max-w-4xl p-1 md:p-10"
   >
-    <div
-      class="terminal-nav"
+    <header
+      class="flex justify-between flex-col md:flex-row items-center"
     >
-      <header
-        class="terminal-logo"
+      <a
+        class="font-extrabold text-2xl hover:text-white mb-2"
+        href="/"
+      >
+        <span
+          class="text-pink-600 "
+        >
+          &gt;&gt;
+        </span>
+         Robert Lönnqvist
+      </a>
+      <nav
+        class="flex justify-around space-x-2 items-center mb-2"
+      >
+        <a
+          class="font-medium block px-4 py-2 hover:text-white hover:bg-gray-500 rounded-lg "
+          href="/"
+        >
+          About
+        </a>
+        <a
+          class="font-medium block px-4 py-2 hover:text-white hover:bg-gray-500 rounded-lg bg-gray-500 text-white"
+          href="/cv"
+        >
+          CV
+        </a>
+        <a
+          class="font-medium block px-4 py-2 hover:text-white hover:bg-gray-500 rounded-lg"
+          href="https://github.com/robertlonnqvist"
+        >
+          Code
+        </a>
+        <a
+          class="font-medium block px-4 py-2 hover:text-white hover:bg-gray-500 rounded-lg"
+          href="http://www.linkedin.com/in/robertlonnqvist"
+        >
+          Contact
+        </a>
+      </nav>
+    </header>
+    <div
+      class="flex flex-col bg-gray-800 rounded-lg shadow-lg"
+    >
+      <div
+        class="flex justify-between items-center px-4 py-2 bg-black rounded-t-lg"
       >
         <div
-          class="logo terminal-prompt"
+          class="flex justify-start space-x-2"
         >
-          <a
-            class="no-style"
-            href="/"
-          >
-            Robert Lönnqvist
-          </a>
+          <div
+            class="w-3 h-3 bg-red-500 rounded-full"
+          />
+          <div
+            class="w-3 h-3 bg-yellow-400 rounded-full"
+          />
+          <div
+            class="w-3 h-3 bg-green-400 rounded-full"
+          />
         </div>
-      </header>
-      <nav
-        class="terminal-menu"
+        <div
+          class="text-center flex-grow"
+        >
+          CV
+        </div>
+      </div>
+      <div
+        class="m-3"
       >
-        <ul>
-          <li>
-            <a
-              class="menu-item"
-              href="/"
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              class="menu-item active"
-              href="/cv"
-            >
-              CV
-            </a>
-          </li>
-          <li>
-            <a
-              class="menu-item"
-              href="https://github.com/robertlonnqvist"
-            >
-              Code
-            </a>
-          </li>
-          <li>
-            <a
-              class="menu-item"
-              href="http://www.linkedin.com/in/robertlonnqvist"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <h1
+          class="text-2xl text-green-400 mb-3"
+        >
+          Curriculum vitae
+        </h1>
+        <h2
+          class="text-xl text-blue-400 mb-3"
+        >
+          Technical skills
+        </h2>
+        <p
+          class="mb-3"
+        >
+          <i>
+             
+            Java, Javascript, Typescript, NodeJS, HTML, CSS, NPM, jQuery, React, Angular, Webpack, Maven, Gradle, Spring Core, Spring MVC, Spring Boot, Shell, Bash, Ruby, Python, Flyway, Jersey, REST, JAXWS, SOAP, JavaEE, JSP, JSF, Thymeleaf, SQL, Tomcat, Glassfish, JBOSS/Wildfly, Git, SVN, MacOS, Linux, Windows, Mysql, MariaDB, SQL Server, Redis, MongoDB, Visual Studio Code, IntelliJ IDEA, VIM, Eclipse, NetBeans, AWS, Kibana, APM (Application Performance Monitoring), SonarQube, Kafka, Gitlab, GitlabCI, GitHub, GitHub Actions, Jenkins, ContentFul, Netfly, Docker
+            ... and probably more I forgot about :)
+          </i>
+        </p>
+        <h2
+          class="text-xl text-blue-400 mb-3"
+        >
+          Experience
+        </h2>
+        <div>
+          <h3
+            class="text-lg text-yellow-400 mb-3"
+          >
+            2020- Tele2 Sverige AB, System Architect
+          </h3>
+          <p
+            class="mb-3"
+          >
+            System architect and tech lead for six development teams. My role is to
+        support the teams with techical decisions and bridge between the
+        enterprise architects and the developers making sure we are doing the
+        right things.
+          </p>
+        </div>
+        <div>
+          <h3
+            class="text-lg text-yellow-400 mb-3"
+          >
+            2019-2020 Svenska Spel AB, Software Developer
+          </h3>
+          <p
+            class="mb-3"
+          >
+            Software developer part of a small development team refactoring a big
+        Java based system. The system was deployed on ~2000 devices accross
+        Sweden. The work included modernize the code base and refactor legacy
+        code introducing IoC with Spring framework.
+          </p>
+        </div>
+        <div>
+          <h3
+            class="text-lg text-yellow-400 mb-3"
+          >
+            2018-2019 Tele2 Sverige AB, Domain Architect
+          </h3>
+          <p
+            class="mb-3"
+          >
+            Domain architect and responsible for web, self-service and customer
+        integrations at TELE2 B2B IT Services. Working with TELE2 online
+        channels for self-service for B2B (SME and LE) segments in customer
+        projects, IT infrastructure and product management. Project screening
+        and solution design.
+          </p>
+        </div>
+        <div>
+          <h3
+            class="text-lg text-yellow-400 mb-3"
+          >
+            2017-2018 Tele2 Sverige AB, Solution Architect
+          </h3>
+          <p
+            class="mb-3"
+          >
+            Architect for online channels and integration services at Tele2 B2B IT
+        Services. Working with solutions to migrate and integrate TDC
+        application stack onto Tele2 application IT infrastructure. Worked in
+        agile projects and end customer projects as well as product management.
+        Responsibilities in both design and implementation.
+          </p>
+        </div>
+        <div>
+          <h3
+            class="text-lg text-yellow-400 mb-3"
+          >
+            2014-2017 TDC Sverige AB, IT Architect
+          </h3>
+          <p
+            class="mb-3"
+          >
+            Architect for online channels and integration services in the Nordics.
+        Responsible for TDC Nordics web channels and OSS (Operational Service
+        Software) applications. Worked in agile projects with product owners and
+        product management as well as end customers. Responsibilities in both
+        design and implementation.
+          </p>
+        </div>
+        <div>
+          <h3
+            class="text-lg text-yellow-400 mb-3"
+          >
+            2007-2014 TDC Sverige AB, System Architect
+          </h3>
+          <p
+            class="mb-3"
+          >
+            Development lead for TDC's self-service customer portal Nordic TDC
+        Service Online. Responsible for a team of 5-10 developers working
+        closely towards product managers and product owner. Participated in
+        implementation and transition of SCRUM for the development teams.
+          </p>
+        </div>
+        <div>
+          <h3
+            class="text-lg text-yellow-400 mb-3"
+          >
+            2006-2007 TDC Song AB, Software Developer
+          </h3>
+          <p
+            class="mb-3"
+          >
+            Developer for TDC's self-service customer portal Nordic TDC Service
+        Online. Member of a development team consisting of 5-10 developers. The
+        application consisted of a PHP based application which was migrated to
+        Java with Spring MVC.
+          </p>
+        </div>
+      </div>
     </div>
-    <h1>
-      Curriculum vitae
-    </h1>
-    <h2>
-      Techical skills
-    </h2>
-    <p>
-      <i>
-        Java, Javascript, Typescript, NodeJS, HTML, CSS, NPM, jQuery, React, Angular, Webpack, Maven, Gradle, Spring Core, Spring MVC, Spring Boot, Shell, Bash, Ruby, Python, Flyway, Jersey, REST, JAXWS, SOAP, JavaEE, JSP, Thymeleaf, SQL, Tomcat, Glassfish, JBOSS/Wildfly, MacOS, Linux, Windows, Mysql, MariaDB, SQL Server, Redis, MongoDB, Visual Studio Code, IntelliJ IDEA, VIM, Eclipse, NetBeans, AWS, Kibana, APM (Application Performance Monitoring), SonarQube, Kafka, Gitlab, GitlabCI, Docker, Jenkins, Git, SVN... and probably more I forgot about :)
-      </i>
-    </p>
-    <h2>
-      Experience
-    </h2>
-    <h3>
-      2020- Tele2 Svering AB, System Architect
-    </h3>
-    <p>
-      System architect and tech lead for six development teams. My role is to support the teams with techical decisions and bridge between the enterprise architects and the developers making sure we are doing the right things.
-    </p>
-    <h3>
-      2019-2020 Svenska Spel AB, Software Developer
-    </h3>
-    <p>
-      Software developer part of a small development team refactoring a big Java based system. The system was deployed on ~2000 devices accross Sweden. The work included modernize the code base and refactor legacy code introducing IoC with Spring framework.
-    </p>
-    <h3>
-      2018-2019 Tele2 Sverige AB, Domain Architect
-    </h3>
-    <p>
-      Domain architect and responsible for web, self-service and customer integrations at TELE2 B2B IT Services. Working with TELE2 online channels for self-service for B2B (SME and LE) segments in customer projects, IT infrastructure and product management. Project screening and solution design.
-    </p>
-    <h3>
-      2017-2018 Tele2 Sverige AB, Solution Architect
-    </h3>
-    <p>
-      Architect for online channels and integration services at Tele2 B2B IT Services. Working with solutions to migrate and integrate TDC application stack onto Tele2 application IT infrastructure. Worked in agile projects and end customer projects as well as product management. Responsibilities in both design and implementation.
-    </p>
-    <h3>
-      2014-2017 TDC Sverige AB, IT Architect
-    </h3>
-    <p>
-      Architect for online channels and integration services in the Nordics. Responsible for TDC Nordics web channels and OSS (Operational Service Software) applications. Worked in agile projects with product owners and product management as well as end customers. Responsibilities in both design and implementation.
-    </p>
-    <h3>
-      2007-2014 TDC Sverige AB, System Architect
-    </h3>
-    <p>
-      Development lead for TDC's self-service customer portal Nordic TDC Service Online. Responsible for a team of 5-10 developers working closely towards product managers and product owner. Participated in implementation and transition of SCRUM for the development teams.
-    </p>
-    <h3>
-      2006-2007 TDC Song AB, Software Developer
-    </h3>
-    <p>
-      Developer for TDC's self-service customer portal Nordic TDC Service Online. Member of a development team consisting of 5-10 developers. The application consisted of a PHP based application which was migrated to Java with Spring MVC.
-    </p>
   </div>
 </div>
 `;
