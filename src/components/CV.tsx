@@ -21,7 +21,7 @@ const CV = (): JSX.Element => {
         </i>
       </p>
       <h2>Experience</h2>
-      <h3>2020- Tele2 Svering AB, System Architect</h3>
+      <h3>2020- Tele2 Sverige AB, System Architect</h3>
       <p>
         System architect and tech lead for six development teams. My role is to
         support the teams with techical decisions and bridge between the
