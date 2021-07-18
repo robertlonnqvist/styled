@@ -37,12 +37,12 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "build": "prettier --check . && npm run webpack",
+    "build": "prettier --check . && npm run lint && npm run webpack",
     "test": "jest --roots src",
     "webpack": "webpack --mode production",
     "watch": "webpack --mode development --devtool cheap-module-eval-source-map --watch",
     "start": "webpack serve --mode development --devtool eval-source-map --inline",
-    "lint": "eslint --ext .tsx --ext .ts src",
+    "lint": "eslint --ext .tsx --ext .ts --ext .mjs --ext .json --ignore-path .gitignore --max-warnings 0 .",
     "format": "prettier --write .",
     "predeploy": "npm run build && cp CNAME dist/CNAME",
     "deploy": "gh-pages -d dist"

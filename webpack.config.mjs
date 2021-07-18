@@ -2,7 +2,7 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
 import TerserPlugin from "terser-webpack-plugin";
 import ESLintPlugin from "eslint-webpack-plugin";
-import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
+import ForkTsCheckerPlugin from "fork-ts-checker-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
@@ -49,7 +49,7 @@ export default () => {
       new ESLintPlugin({
         files: ["./src/**/*.{ts,tsx}"],
       }),
-      new ForkTsCheckerWebpackPlugin(),
+      new ForkTsCheckerPlugin(),
       new HtmlWebpackPlugin({
         template: "./src/index.html",
         publicPath: "/",
