@@ -6,7 +6,7 @@ const CV = (): JSX.Element => {
     <div className="container">
       <Nav active="cv" />
       <h1>Curriculum vitae</h1>
-      <h2>Techical skills</h2>
+      <h2>Technical skills</h2>
       <p>
         <i>
           Java, Javascript, Typescript, NodeJS, HTML, CSS, NPM, jQuery, React,
