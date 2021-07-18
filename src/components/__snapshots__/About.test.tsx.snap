@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders About component 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="terminal-nav"
+    >
+      <header
+        class="terminal-logo"
+      >
+        <div
+          class="logo terminal-prompt"
+        >
+          <a
+            class="no-style"
+            href="/"
+          >
+            Robert Lönnqvist
+          </a>
+        </div>
+      </header>
+      <nav
+        class="terminal-menu"
+      >
+        <ul>
+          <li>
+            <a
+              class="menu-item active"
+              href="/"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              class="menu-item"
+              href="/cv"
+            >
+              CV
+            </a>
+          </li>
+          <li>
+            <a
+              class="menu-item"
+              href="https://github.com/robertlonnqvist"
+            >
+              Code
+            </a>
+          </li>
+          <li>
+            <a
+              class="menu-item"
+              href="http://www.linkedin.com/in/robertlonnqvist"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <h1>
+      Freelance software developer and architect
+    </h1>
+    <p>
+      <b>
+        I love writing code
+      </b>
+       and being part of every aspect of the software development process. I'm passionate about technologies and tools that make great products and increase developer productivity. Currently, I work as a software architect and tech lead, supporting agile development teams to make the right decisions.
+    </p>
+  </div>
+</div>
+`;

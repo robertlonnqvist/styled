@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Nav component 1`] = `
+<div>
+  <div
+    class="terminal-nav"
+  >
+    <header
+      class="terminal-logo"
+    >
+      <div
+        class="logo terminal-prompt"
+      >
+        <a
+          class="no-style"
+          href="/"
+        >
+          Robert Lönnqvist
+        </a>
+      </div>
+    </header>
+    <nav
+      class="terminal-menu"
+    >
+      <ul>
+        <li>
+          <a
+            class="menu-item active"
+            href="/"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            class="menu-item"
+            href="/cv"
+          >
+            CV
+          </a>
+        </li>
+        <li>
+          <a
+            class="menu-item"
+            href="https://github.com/robertlonnqvist"
+          >
+            Code
+          </a>
+        </li>
+        <li>
+          <a
+            class="menu-item"
+            href="http://www.linkedin.com/in/robertlonnqvist"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;

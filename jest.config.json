@@ -2,7 +2,6 @@
   "testEnvironment": "jsdom",
   "preset": "ts-jest",
   "moduleNameMapper": {
-    "^.+\\.(css)$": "<rootDir>/__mocks__/cssMock.js",
-    "^.+\\.(svg)$": "<rootDir>/__mocks__/svgMock.js"
+    "^.+\\.(css)$": "<rootDir>/__mocks__/cssMock.js"
   }
 }

@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-var-requires,no-undef */
-const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
@@ -39,20 +38,10 @@ module.exports = function () {
     optimization: {
       minimize: true,
       minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
-      splitChunks: {
-        cacheGroups: {
-          commons: {
-            chunks: "all",
-            name: "vendor",
-            test: /[\\/]node_modules[\\/]/,
-          },
-        },
-      },
     },
     output: {
       filename: "[name].[contenthash].js",
-      library: "main",
-      libraryTarget: "umd",
+      clean: true,
     },
     plugins: [
       new MiniCssExtractPlugin({
