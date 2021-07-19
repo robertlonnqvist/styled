@@ -1,61 +1,57 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-interface NavProps {
-  active: "about" | "cv";
-}
+const links = [
+  {
+    label: "About",
+    to: "/",
+  },
+  {
+    label: "CV",
+    to: "/cv",
+  },
+];
 
-const Nav = ({ active }: NavProps): JSX.Element => {
-  const items = [
-    {
-      id: "about",
-      label: "About",
-      to: "/",
-    },
-    {
-      id: "cv",
-      label: "CV",
-      to: "/cv",
-    },
-  ];
+const hrefs = [
+  {
+    label: "Code",
+    href: "https://github.com/robertlonnqvist",
+  },
+  {
+    label: "Contact",
+    href: "http://www.linkedin.com/in/robertlonnqvist",
+  },
+];
 
+const Nav = ({ title }: { title: string }): JSX.Element => {
   return (
-    <div className="terminal-nav">
-      <header className="terminal-logo">
-        <div className="logo terminal-prompt">
-          <a href="/" className="no-style">
-            Robert Lönnqvist
+    <header className="flex justify-between flex-col md:flex-row items-center">
+      <a href="/" className="font-extrabold text-2xl hover:text-white mb-2">
+        <span className="text-pink-600 ">&gt;&gt;</span> Robert Lönnqvist
+      </a>
+      <nav className="flex justify-around space-x-2 items-center mb-2">
+        {links.map(({ label, to }, i) => (
+          <Link
+            key={i}
+            to={to}
+            className={`font-medium block px-4 py-2 hover:text-white hover:bg-gray-500 rounded-lg ${
+              title === label ? "bg-gray-500 text-white" : ""
+            }`}
+          >
+            {label}
+          </Link>
+        ))}
+        {hrefs.map(({ label, href }, i) => (
+          <a
+            key={i}
+            href={href}
+            className="font-medium block px-4 py-2 hover:text-white hover:bg-gray-500 rounded-lg"
+          >
+            {label}
           </a>
-        </div>
-      </header>
-      <nav className="terminal-menu">
-        <ul>
-          {items.map((link) => (
-            <li key={link.id}>
-              <Link
-                to={link.to}
-                className={`menu-item${active === link.id ? " active" : ""}`}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-          <li>
-            <a href="https://github.com/robertlonnqvist" className="menu-item">
-              Code
-            </a>
-          </li>
-          <li>
-            <a
-              href="http://www.linkedin.com/in/robertlonnqvist"
-              className="menu-item"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
+        ))}
       </nav>
-    </div>
+    </header>
   );
 };
 

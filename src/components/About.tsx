@@ -1,19 +1,22 @@
 import React from "react";
-import Nav from "./Nav";
+import Container from "./Container";
 
 const About = (): JSX.Element => {
   return (
-    <div className="container">
-      <Nav active="about" />
-      <h1>Freelance software developer and architect</h1>
-      <p>
+    <Container
+      title="About"
+      headline="Freelance software developer and architect"
+    >
+      <p className="mb-3">
         <b>I love writing code</b> and being part of every aspect of the
         software development process. I'm passionate about technologies and
         tools that make great products and increase developer productivity.
+      </p>
+      <p className="mb-3">
         Currently, I work as a software architect and tech lead, supporting
         agile development teams to make the right decisions.
       </p>
-    </div>
+    </Container>
   );
 };
 
