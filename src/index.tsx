@@ -2,14 +2,14 @@ import "tailwindcss/tailwind.css";
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 const About = React.lazy(() => import("./components/About"));
 const CV = React.lazy(() => import("./components/CV"));
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <React.Suspense fallback={<div>Loading...</div>}>
         <Switch>
           <Route exact path="/cv">
@@ -20,7 +20,7 @@ ReactDOM.render(
           </Route>
         </Switch>
       </React.Suspense>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -8,7 +8,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   devServer: {
-    historyApiFallback: true,
     host: "0.0.0.0",
   },
   entry: {
