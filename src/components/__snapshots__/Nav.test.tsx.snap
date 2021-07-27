@@ -39,7 +39,7 @@ exports[`renders Nav component 1`] = `
       </a>
       <a
         class="font-medium block px-4 py-2 hover:text-white hover:bg-gray-500 rounded-lg"
-        href="http://www.linkedin.com/in/robertlonnqvist"
+        href="https://www.linkedin.com/in/robertlonnqvist"
       >
         Contact
       </a>

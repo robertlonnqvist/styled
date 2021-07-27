@@ -42,7 +42,7 @@ exports[`renders CV component 1`] = `
         </a>
         <a
           class="font-medium block px-4 py-2 hover:text-white hover:bg-gray-500 rounded-lg"
-          href="http://www.linkedin.com/in/robertlonnqvist"
+          href="https://www.linkedin.com/in/robertlonnqvist"
         >
           Contact
         </a>
@@ -91,7 +91,7 @@ exports[`renders CV component 1`] = `
         >
           <i>
              
-            Java, Javascript, Typescript, NodeJS, HTML, CSS, NPM, jQuery, React, Angular, Webpack, Maven, Gradle, Spring Core, Spring MVC, Spring Boot, Shell, Bash, Ruby, Python, Flyway, Jersey, REST, JAXWS, SOAP, JavaEE, JSP, JSF, Thymeleaf, SQL, Tomcat, Glassfish, JBOSS/Wildfly, Git, SVN, MacOS, Linux, Windows, Mysql, MariaDB, SQL Server, Redis, MongoDB, Visual Studio Code, IntelliJ IDEA, VIM, Eclipse, NetBeans, AWS, Kibana, APM (Application Performance Monitoring), SonarQube, Kafka, Gitlab, GitlabCI, GitHub, GitHub Actions, Jenkins, ContentFul, Netfly, Docker
+            Java, Javascript/ECMAScript, Typescript, Ruby, Python, Go, NodeJS, HTML, CSS, NPM, jQuery, React, Angular, Webpack, Parcel, Rest, GraphQL, Protobuf, Soap, Spring Boot, Spring Core, Spring MVC, Maven, Gradle, Flyway, JavaEE, Jersey, JAXWS, JSP, JSF, Thymeleaf, SQL, Tomcat, Glassfish, JBOSS/Wildfly, Shell, Bash, Git, SVN, MacOS, Linux, Windows, MySQL, MariaDB, PostgreSQL, SQL Server, Redis, MongoDB, Visual Studio Code, IntelliJ IDEA, VIM, Eclipse, NetBeans, AWS, Azure, Kibana, APM, SonarQube, Kafka, Gitlab, GitlabCI, GitHub, GitHub Actions, Jenkins, ContentFul, Netifly, Docker
             ... and probably more I forgot about :)
           </i>
         </p>
