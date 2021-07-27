@@ -19,7 +19,7 @@ const hrefs = [
   },
   {
     label: "Contact",
-    href: "http://www.linkedin.com/in/robertlonnqvist",
+    href: "https://www.linkedin.com/in/robertlonnqvist",
   },
 ];
 

@@ -1,10 +1,10 @@
 import React from "react";
 
-interface SignalsProps {
+interface TitleProps {
   title: string;
 }
 
-const Signals = ({ title }: SignalsProps): JSX.Element => {
+const Title = ({ title }: TitleProps): JSX.Element => {
   return (
     <div className="flex justify-between items-center px-4 py-2 bg-black rounded-t-lg">
       <div className="flex justify-start space-x-2">
@@ -17,4 +17,4 @@ const Signals = ({ title }: SignalsProps): JSX.Element => {
   );
 };
 
-export default Signals;
+export default Title;
