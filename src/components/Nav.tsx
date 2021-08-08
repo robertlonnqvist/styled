@@ -25,7 +25,7 @@ const hrefs = [
 
 const Nav = ({ title }: { title: string }): JSX.Element => {
   return (
-    <header className="flex justify-between flex-col md:flex-row items-center">
+    <header className="flex justify-between flex-col md:flex-row items-center mb-6">
       <a href="/" className="font-extrabold text-2xl hover:text-white mb-2">
         <span className="text-pink-600 ">&gt;&gt;</span> Robert Lönnqvist
       </a>

@@ -3,7 +3,7 @@
 exports[`renders Nav component 1`] = `
 <div>
   <header
-    class="flex justify-between flex-col md:flex-row items-center"
+    class="flex justify-between flex-col md:flex-row items-center mb-6"
   >
     <a
       class="font-extrabold text-2xl hover:text-white mb-2"

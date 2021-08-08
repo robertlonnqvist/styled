@@ -137,14 +137,14 @@ const experiences = [
 const CV = (): JSX.Element => {
   return (
     <Container title="CV" headline="Curriculum vitae">
-      <h2 className="text-xl text-blue-400 mb-3">Technical skills</h2>
+      <h2 className="text-xl text-blue-400 font-bold mb-3">Technical skills</h2>
       <p className="mb-3">
         <i> {keywords.join(", ")}... and probably more I forgot about :)</i>
       </p>
-      <h2 className="text-xl text-blue-400 mb-3">Experience</h2>
+      <h2 className="text-xl text-blue-400 font-bold mb-3">Experience</h2>
       {experiences.map(({ title, body }, i) => (
         <div key={i}>
-          <h3 className="text-lg text-yellow-400 mb-3">{title}</h3>
+          <h3 className="text-lg text-yellow-400 font-bold mb-3">{title}</h3>
           <p className="mb-3">{body}</p>
         </div>
       ))}
