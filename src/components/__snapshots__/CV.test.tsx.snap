@@ -62,8 +62,7 @@ exports[`renders CV component 1`] = `
       class="mb-3"
     >
       <i>
-         
-        Java, Javascript/ECMAScript, Typescript, Ruby, Python, Go, NodeJS, HTML, CSS, NPM, jQuery, React, Angular, Webpack, Parcel, Rest, GraphQL, Protobuf, Soap, Spring Boot, Spring Core, Spring MVC, Maven, Gradle, Flyway, JavaEE, Jersey, JAXWS, JSP, JSF, Thymeleaf, SQL, Tomcat, Glassfish, JBOSS/Wildfly, Shell, Bash, Git, SVN, MacOS, Linux, Windows, MySQL, MariaDB, PostgreSQL, SQL Server, Redis, MongoDB, Visual Studio Code, IntelliJ IDEA, VIM, Eclipse, NetBeans, AWS, Azure, Kibana, APM, SonarQube, Kafka, Gitlab, GitlabCI, GitHub, GitHub Actions, Jenkins, ContentFul, Netifly, Docker
+        Java, Javascript/ECMAScript, Typescript, Ruby, Python, Go, NodeJS, HTML, CSS, NPM, React, Angular, jQuery, Webpack, Parcel, Rest, GraphQL, Protobuf, Soap, Spring Boot, Spring Core, Spring MVC, Maven, Gradle, Flyway, JavaEE, Jersey, JAXWS, JSP, JSF, Thymeleaf, SQL, Tomcat, Glassfish, JBOSS/Wildfly, Shell, Bash, ZSH, Git, SVN, MacOS, Linux, Windows, MySQL, MariaDB, PostgreSQL, SQL Server, Redis, MongoDB, Visual Studio Code, IntelliJ IDEA, Vim, NeoVim, Eclipse, NetBeans, AWS, Azure, Kibana, APM, SonarQube, Kafka, Gitlab, GitlabCI, GitHub, GitHub Actions, Jenkins, ContentFul, Netifly, Docker
         ... and probably more I forgot about :)
       </i>
     </p>

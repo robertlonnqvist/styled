@@ -1,7 +1,7 @@
-import React from "react";
 import { render } from "@testing-library/react";
-import Container from "./Container";
 import { MemoryRouter } from "react-router-dom";
+
+import Container from "./Container";
 
 describe("Nav component", () => {
   test("renders Nav component", () => {

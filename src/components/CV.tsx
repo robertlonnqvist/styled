@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "./Container";
 
 const keywords = [
@@ -13,9 +12,9 @@ const keywords = [
   "HTML",
   "CSS",
   "NPM",
-  "jQuery",
   "React",
   "Angular",
+  "jQuery",
   "Webpack",
   "Parcel",
 
@@ -43,6 +42,7 @@ const keywords = [
 
   "Shell",
   "Bash",
+  "ZSH",
   "Git",
   "SVN",
 
@@ -59,7 +59,8 @@ const keywords = [
 
   "Visual Studio Code",
   "IntelliJ IDEA",
-  "VIM",
+  "Vim",
+  "NeoVim",
   "Eclipse",
   "NetBeans",
 
@@ -77,7 +78,7 @@ const keywords = [
   "ContentFul",
   "Netifly",
   "Docker",
-];
+] as const;
 
 const experiences = [
   {
@@ -132,18 +133,18 @@ const experiences = [
         application consisted of a PHP based application which was migrated to
         Java with Spring MVC.`,
   },
-];
+] as const;
 
 const CV = (): JSX.Element => {
   return (
     <Container title="CV" headline="Curriculum vitae">
       <h2 className="text-xl text-blue-400 font-bold mb-3">Technical skills</h2>
       <p className="mb-3">
-        <i> {keywords.join(", ")}... and probably more I forgot about :)</i>
+        <i>{keywords.join(", ")}... and probably more I forgot about :)</i>
       </p>
       <h2 className="text-xl text-blue-400 font-bold mb-3">Experience</h2>
-      {experiences.map(({ title, body }, i) => (
-        <div key={i}>
+      {experiences.map(({ title, body }) => (
+        <div key={title}>
           <h3 className="text-lg text-yellow-400 font-bold mb-3">{title}</h3>
           <p className="mb-3">{body}</p>
         </div>

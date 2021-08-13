@@ -1,7 +1,7 @@
-import React from "react";
 import { render } from "@testing-library/react";
-import CV from "./CV";
 import { MemoryRouter } from "react-router-dom";
+
+import CV from "./CV";
 
 test("renders CV component", () => {
   const { container } = render(

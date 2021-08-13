@@ -1,16 +1,14 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Nav from "./Nav";
-
-interface ContainerProps {
-  title: string;
-  headline: string;
-}
 
 const Container = ({
   title,
   headline,
   children,
-}: React.PropsWithChildren<ContainerProps>): JSX.Element => {
+}: React.PropsWithChildren<{
+  title: string;
+  headline: string;
+}>): JSX.Element => {
   useEffect(() => {
     window.document.title = `Robert Lönnqvist | ${title}`;
   }, [title]);

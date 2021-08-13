@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const links = [
@@ -10,7 +9,7 @@ const links = [
     label: "CV",
     to: "/cv",
   },
-];
+] as const;
 
 const hrefs = [
   {
@@ -21,7 +20,7 @@ const hrefs = [
     label: "Contact",
     href: "https://www.linkedin.com/in/robertlonnqvist",
   },
-];
+] as const;
 
 const Nav = ({ title }: { title: string }): JSX.Element => {
   return (
