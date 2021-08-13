@@ -48,7 +48,7 @@
     "build": "prettier --check . && npm run lint && NODE_ENV=production webpack --mode production",
     "test": "jest --roots src",
     "start": "webpack serve --mode development --devtool eval-source-map --inline",
-    "lint": "eslint --ext .tsx --ext .ts --ext .mjs --ext .json --ignore-path .gitignore --max-warnings 0 .",
+    "lint": "eslint --ext .tsx --ext .ts --ext .js --ext .mjs --ext .json --ignore-path .gitignore --max-warnings 0 .",
     "format": "prettier --write .",
     "predeploy": "npm run build && cp CNAME dist/CNAME",
     "deploy": "gh-pages -d dist"
