@@ -10,6 +10,5 @@
     "skipDefaultLibCheck": true,
     "isolatedModules": true,
     "outDir": "dist/"
-  },
-  "exclude": ["node_modules", "target"]
+  }
 }

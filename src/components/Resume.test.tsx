@@ -1,12 +1,12 @@
 import { render } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 
-import CV from "./CV";
+import Resume from "./Resume";
 
-test("renders CV component", () => {
+test("renders Resume component", () => {
   const { container } = render(
     <MemoryRouter>
-      <CV />
+      <Resume />
     </MemoryRouter>
   );
   expect(container).toMatchSnapshot();

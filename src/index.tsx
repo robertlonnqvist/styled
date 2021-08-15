@@ -1,23 +1,21 @@
 import "tailwindcss/tailwind.css";
 
-import { StrictMode, Suspense, lazy } from "react";
+import { StrictMode, Suspense } from "react";
 import { render } from "react-dom";
 import { HashRouter, Route, Switch } from "react-router-dom";
 
-const About = lazy(() => import("./components/About"));
-const CV = lazy(() => import("./components/CV"));
+import { routes } from "./components/routes";
 
 render(
   <StrictMode>
     <HashRouter>
       <Suspense fallback={<div className="text-center p-4">Loading...</div>}>
         <Switch>
-          <Route exact path="/cv">
-            <CV />
-          </Route>
-          <Route path="*">
-            <About />
-          </Route>
+          {routes.map(({ Component, to }) => (
+            <Route key={to} exact path={to}>
+              <Component />
+            </Route>
+          ))}
         </Switch>
       </Suspense>
     </HashRouter>

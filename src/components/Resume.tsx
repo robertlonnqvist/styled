@@ -135,9 +135,9 @@ const experiences = [
   },
 ] as const;
 
-const CV = (): JSX.Element => {
+const Resume = (): JSX.Element => {
   return (
-    <Container title="CV" headline="Curriculum vitae">
+    <Container title="Resume" headline="Resume">
       <h2 className="text-xl text-blue-400 font-bold mb-3">Technical skills</h2>
       <p className="mb-3">
         <i>{keywords.join(", ")}... and probably more I forgot about :)</i>
@@ -145,7 +145,9 @@ const CV = (): JSX.Element => {
       <h2 className="text-xl text-blue-400 font-bold mb-3">Experience</h2>
       {experiences.map(({ title, body }) => (
         <div key={title}>
-          <h3 className="text-lg text-yellow-400 font-bold mb-3">{title}</h3>
+          <h3 className="text-lg text-yellow-400 font-bold mb-3 pt-3">
+            {title}
+          </h3>
           <p className="mb-3">{body}</p>
         </div>
       ))}
@@ -153,4 +155,4 @@ const CV = (): JSX.Element => {
   );
 };
 
-export default CV;
+export default Resume;
