@@ -1,11 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, PropsWithChildren } from "react";
 import Nav from "./Nav";
 
 const Container = ({
   title,
   headline,
   children,
-}: React.PropsWithChildren<{
+}: PropsWithChildren<{
   title: string;
   headline: string;
 }>): JSX.Element => {

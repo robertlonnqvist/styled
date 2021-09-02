@@ -7,9 +7,6 @@ const ForkTsCheckerPlugin = require("fork-ts-checker-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  devServer: {
-    host: "0.0.0.0",
-  },
   entry: {
     main: ["./src/index.tsx"],
   },
