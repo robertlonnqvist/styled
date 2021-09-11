@@ -3,7 +3,7 @@
 exports[`renders About component 1`] = `
 <div>
   <div
-    class="container mx-auto max-w-4xl p-1 md:p-10"
+    class="container mx-auto max-w-4xl p-3 md:p-10"
   >
     <header
       class="flex justify-between flex-col md:flex-row items-center mb-6 border-b border-gray-400"
