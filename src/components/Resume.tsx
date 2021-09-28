@@ -145,9 +145,7 @@ const Resume = (): JSX.Element => {
       <h2 className="text-xl text-blue-400 font-bold mb-3">Experience</h2>
       {experiences.map(({ title, body }) => (
         <div key={title}>
-          <h3 className="text-lg text-yellow-400 font-bold mb-3 pt-3">
-            {title}
-          </h3>
+          <h3 className="text-lg font-bold mb-3">{title}</h3>
           <p className="mb-3">{body}</p>
         </div>
       ))}
