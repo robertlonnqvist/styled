@@ -7,11 +7,11 @@ export const routes = [
   {
     label: "About",
     to: "/",
-    Component: About,
+    component: About,
   },
   {
     label: "Resume",
     to: "/resume",
-    Component: Resume,
+    component: Resume,
   },
 ] as const;

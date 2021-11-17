@@ -11,7 +11,7 @@ render(
     <HashRouter>
       <Suspense fallback={<div className="text-center p-4">Loading...</div>}>
         <Routes>
-          {routes.map(({ Component, to }) => (
+          {routes.map(({ component: Component, to }) => (
             <Route key={to} path={to} element={<Component />} />
           ))}
         </Routes>
