@@ -1,4 +1,5 @@
 import "tailwindcss/tailwind.css";
+import "jetbrains-mono";
 
 import { StrictMode, Suspense } from "react";
 import { render } from "react-dom";
