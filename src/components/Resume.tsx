@@ -84,9 +84,10 @@ const experiences = [
   {
     title: "2020- Tele2 Sverige AB, System Architect",
     body: `System architect and tech lead for six development teams. My role is to
-        support the teams with techical decisions and bridge between the
+        support the teams with technical decisions and bridge between the
         enterprise architects and the developers making sure we are doing the
-        right things.`,
+        right things. During my time we migrated the stack from an traditional
+        deployment to a new pipeline using docker and kubernetes.`,
   },
   {
     title: "2019-2020 Svenska Spel AB, Software Developer",
