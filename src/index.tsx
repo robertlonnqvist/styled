@@ -2,12 +2,17 @@ import "tailwindcss/tailwind.css";
 import "jetbrains-mono";
 
 import { StrictMode, Suspense } from "react";
-import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 import { HashRouter, Route, Routes } from "react-router-dom";
 
 import { routes } from "./components/routes";
 
-render(
+const el = document.getElementById("root");
+if (!el) {
+  throw Error("Container must not be null");
+}
+const root = createRoot(el);
+root.render(
   <StrictMode>
     <HashRouter>
       <Suspense fallback={<div className="text-center p-4">Loading...</div>}>
@@ -18,6 +23,5 @@ render(
         </Routes>
       </Suspense>
     </HashRouter>
-  </StrictMode>,
-  document.getElementById("root")
+  </StrictMode>
 );
