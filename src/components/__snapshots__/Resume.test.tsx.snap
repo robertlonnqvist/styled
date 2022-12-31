@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Resume component 1`] = `
+exports[`Resume component renders Resume component 1`] = `
 <div>
   <div
     class="container mx-auto max-w-4xl p-3 md:p-10"

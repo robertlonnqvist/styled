@@ -5,7 +5,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "target": "ES5",
-    "types": ["jest"],
+    "types": [],
     "jsx": "react-jsx",
     "skipDefaultLibCheck": true,
     "isolatedModules": true,

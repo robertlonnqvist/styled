@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Nav component 1`] = `
+exports[`Nav component renders Nav component 1`] = `
 <div>
   <header
     class="flex justify-between flex-col md:flex-row items-center mb-6 border-b border-gray-400"
