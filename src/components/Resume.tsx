@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import Container from "./Container";
 
 const keywords = [

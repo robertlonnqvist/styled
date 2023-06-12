@@ -1,4 +1,4 @@
-import { useEffect, PropsWithChildren } from "react";
+import { JSX, useEffect, PropsWithChildren } from "react";
 import Nav from "./Nav";
 
 const Container = ({
