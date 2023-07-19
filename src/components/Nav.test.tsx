@@ -9,7 +9,7 @@ describe("Nav component", () => {
     const { container } = render(
       <MemoryRouter>
         <Nav title="About" />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     expect(container).toMatchSnapshot();
   });

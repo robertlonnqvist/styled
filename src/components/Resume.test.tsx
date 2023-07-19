@@ -9,7 +9,7 @@ describe("Resume component", () => {
     const { container } = render(
       <MemoryRouter>
         <Resume />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     expect(container).toMatchSnapshot();
   });

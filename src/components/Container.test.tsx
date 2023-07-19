@@ -9,7 +9,7 @@ describe("Nav component", () => {
     const { container } = render(
       <MemoryRouter>
         <Container title="testTitle" headline="testheadline" />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     expect(container).toMatchSnapshot();
   });
@@ -17,7 +17,7 @@ describe("Nav component", () => {
     render(
       <MemoryRouter>
         <Container title="testTitle" headline="testheadline" />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     expect(window.document.title).toEqual("Robert Lönnqvist | testTitle");
   });

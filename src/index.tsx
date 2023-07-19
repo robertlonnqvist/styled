@@ -23,5 +23,5 @@ root.render(
         </Routes>
       </Suspense>
     </HashRouter>
-  </StrictMode>
+  </StrictMode>,
 );
