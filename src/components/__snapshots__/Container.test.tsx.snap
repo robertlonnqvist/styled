@@ -24,12 +24,14 @@ exports[`Nav component renders Nav component 1`] = `
       >
         <a
           class="font-bold block px-4 py-2 hover:text-white hover:bg-gray-500 rounded-lg "
+          data-discover="true"
           href="/"
         >
           About
         </a>
         <a
           class="font-bold block px-4 py-2 hover:text-white hover:bg-gray-500 rounded-lg "
+          data-discover="true"
           href="/resume"
         >
           Resume
