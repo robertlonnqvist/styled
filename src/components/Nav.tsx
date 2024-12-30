@@ -1,6 +1,5 @@
-import { JSX } from "react";
-import { Link } from "react-router-dom";
-import { routes } from "./routes";
+import { JSX, MouseEvent, useContext } from "react";
+import { Route, RouteContext, routes } from "./routes";
 
 const hrefs = [
   {
@@ -14,22 +13,30 @@ const hrefs = [
 ] as const;
 
 const Nav = ({ title }: { title: string }): JSX.Element => {
+  const [, setRoute] = useContext(RouteContext);
+
+  const onClick = (e: MouseEvent, r: Route) => {
+    e.preventDefault();
+    setRoute(r);
+  };
+
   return (
     <header className="flex justify-between flex-col md:flex-row items-center mb-6 border-b border-gray-400">
       <a href="/" className="font-extrabold text-2xl hover:text-white mb-3">
         <span className="text-pink-600 ">&gt;&gt;</span> Robert Lönnqvist
       </a>
       <nav className="flex justify-around space-x-2 items-center mb-3">
-        {routes.map(({ label, to }, i) => (
-          <Link
+        {routes.map((r, i) => (
+          <a
             key={i}
-            to={to}
+            href={r.href}
+            onClick={(e) => onClick(e, r)}
             className={`font-bold block px-4 py-2 hover:text-white hover:bg-gray-500 rounded-lg ${
-              title === label ? "bg-gray-500 text-white" : ""
+              title === r.label ? "bg-gray-500 text-white" : ""
             }`}
           >
-            {label}
-          </Link>
+            {r.label}
+          </a>
         ))}
         {hrefs.map(({ label, href }, i) => (
           <a

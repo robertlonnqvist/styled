@@ -1,17 +1,33 @@
-import { lazy } from "react";
+import {
+  ExoticComponent,
+  lazy,
+  createContext,
+  Dispatch,
+  SetStateAction,
+} from "react";
 
 const About = lazy(() => import("./About"));
 const Resume = lazy(() => import("./Resume"));
 
-export const routes = [
+export type Route = {
+  label: string;
+  href: string;
+  component: ExoticComponent;
+};
+
+export const routes: Route[] = [
   {
     label: "About",
-    to: "/",
+    href: "/",
     component: About,
   },
   {
     label: "Resume",
-    to: "/resume",
+    href: "/resume",
     component: Resume,
   },
 ] as const;
+
+export const RouteContext = createContext<
+  [Route | null, Dispatch<SetStateAction<Route | null>>]
+>([null, () => {}]);

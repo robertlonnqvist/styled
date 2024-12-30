@@ -3,9 +3,7 @@ import "jetbrains-mono";
 
 import { StrictMode, Suspense } from "react";
 import { createRoot } from "react-dom/client";
-import { HashRouter, Route, Routes } from "react-router-dom";
-
-import { routes } from "./components/routes";
+import App from "./App";
 
 const el = document.getElementById("root");
 if (!el) {
@@ -14,14 +12,8 @@ if (!el) {
 const root = createRoot(el);
 root.render(
   <StrictMode>
-    <HashRouter>
-      <Suspense fallback={<div className="text-center p-4">Loading...</div>}>
-        <Routes>
-          {routes.map(({ component: Component, to }) => (
-            <Route key={to} path={to} element={<Component />} />
-          ))}
-        </Routes>
-      </Suspense>
-    </HashRouter>
+    <Suspense fallback={<div className="text-center p-4">Loading...</div>}>
+      <App />
+    </Suspense>
   </StrictMode>,
 );

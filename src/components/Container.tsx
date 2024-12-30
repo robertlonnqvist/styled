@@ -1,4 +1,4 @@
-import { JSX, useEffect, PropsWithChildren } from "react";
+import { JSX, PropsWithChildren } from "react";
 import Nav from "./Nav";
 
 const Container = ({
@@ -9,10 +9,6 @@ const Container = ({
   title: string;
   headline: string;
 }>): JSX.Element => {
-  useEffect(() => {
-    window.document.title = `Robert Lönnqvist | ${title}`;
-  }, [title]);
-
   return (
     <div className="container mx-auto max-w-4xl p-3 md:p-10">
       <Nav title={title} />

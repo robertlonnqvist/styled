@@ -6,8 +6,7 @@
   "dependencies": {
     "jetbrains-mono": "^1.0.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router-dom": "^7.1.1"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
