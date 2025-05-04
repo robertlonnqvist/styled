@@ -1,8 +1,0 @@
-{
-  "testEnvironment": "jsdom",
-  "preset": "ts-jest",
-  "moduleNameMapper": {
-    "^.+\\.(css)$": "<rootDir>/__mocks__/cssMock.js"
-  },
-  "setupFilesAfterEnv": ["<rootDir>/src/setupTests.ts"]
-}

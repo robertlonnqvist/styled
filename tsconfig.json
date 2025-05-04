@@ -1,14 +1,7 @@
 {
-  "compilerOptions": {
-    "lib": ["dom", "es2021"],
-    "sourceMap": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "target": "ES5",
-    "types": ["node"],
-    "jsx": "react-jsx",
-    "skipDefaultLibCheck": true,
-    "isolatedModules": true,
-    "outDir": "dist/"
-  }
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }

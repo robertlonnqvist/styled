@@ -5,7 +5,7 @@ const About = (): JSX.Element => {
   return (
     <Container
       title="About"
-      headline="Freelance software developer and architect"
+      headline="Software developer and architect"
     >
       <p className="mb-3">
         <b>I love writing code</b> and being part of every aspect of the
@@ -14,7 +14,7 @@ const About = (): JSX.Element => {
       </p>
       <p className="mb-3">
         Currently, I work as a software architect and tech lead, supporting
-        agile development teams to make the right decisions.
+        teams to make the right decisions.
       </p>
     </Container>
   );
