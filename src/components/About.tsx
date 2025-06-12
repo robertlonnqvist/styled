@@ -3,10 +3,7 @@ import Container from "./Container";
 
 const About = (): JSX.Element => {
   return (
-    <Container
-      title="About"
-      headline="Software developer and architect"
-    >
+    <Container title="About" headline="Software developer and architect">
       <p className="mb-3">
         <b>I love writing code</b> and being part of every aspect of the
         software development process. I&#x27;m passionate about technologies and
