@@ -139,7 +139,7 @@ const experiences = [
 
 const Resume = (): JSX.Element => {
   return (
-    <Container title="Resume" headline="Resume">
+    <Container title="Resume">
       <h2 className="text-xl text-blue-400 font-bold mb-3">Technical skills</h2>
       <p className="mb-3">
         <i>{keywords.join(", ")}... and probably more I forgot about :)</i>
