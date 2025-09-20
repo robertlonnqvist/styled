@@ -1,0 +1,1 @@
+import{j as t}from"./index-BsLf_RC7.js";import{C as e}from"./Container-Bd6KXyGk.js";const a=()=>t.jsx(e,{title:"About",children:t.jsx("p",{className:"mb-3",children:"Software developer and architect"})});export{a as default};
