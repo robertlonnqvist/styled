@@ -29,5 +29,5 @@ export const routes: Route[] = [
 ] as const;
 
 export const RouteContext = createContext<
-  [Route | null, Dispatch<SetStateAction<Route | null>>]
+  [Route | null, Dispatch<SetStateAction<Route>>]
 >([null, () => {}]);

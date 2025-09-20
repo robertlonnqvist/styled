@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { routes, RouteContext, Route } from "./components/routes";
 
 const App = () => {
-  const [route, setRoute] = useState<Route | null>(null);
+  const [route, setRoute] = useState<Route>(routes[0]);
 
   useEffect(() => {
     setRoute(

@@ -25,7 +25,11 @@ const Nav = ({ title }: { title: string }): JSX.Element => {
       <a href="/" className="font-extrabold text-2xl hover:text-white mb-3">
         <span className="text-pink-600 ">&gt;&gt;</span> Robert Lönnqvist
       </a>
-      <nav className="flex justify-around space-x-2 items-center mb-3">
+      <nav
+        className="flex justify-around space-x-2 items-center mb-3"
+        role="navigation"
+        aria-label="Main navigation"
+      >
         {routes.map((r, i) => (
           <a
             key={i}
@@ -34,6 +38,7 @@ const Nav = ({ title }: { title: string }): JSX.Element => {
             className={`font-bold block px-4 py-2 hover:text-white hover:bg-gray-500 rounded-lg ${
               title === r.label ? "bg-gray-500 text-white" : ""
             }`}
+            aria-current={title === r.label ? "page" : undefined}
           >
             {r.label}
           </a>
