@@ -2,13 +2,10 @@ import { useState, useEffect } from "react";
 import { routes, RouteContext, Route } from "./components/routes";
 
 const App = () => {
-  const [route, setRoute] = useState<Route>(routes[0]);
-
-  useEffect(() => {
-    setRoute(
+  const [route, setRoute] = useState<Route>(
+    () =>
       routes.find((r) => location.hash.substring(1) === r.href) || routes[0],
-    );
-  }, []);
+  );
 
   useEffect(() => {
     if (route === null) {
