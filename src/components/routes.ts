@@ -1,5 +1,5 @@
 import {
-  ExoticComponent,
+  ComponentType,
   lazy,
   createContext,
   Dispatch,
@@ -12,7 +12,7 @@ const Resume = lazy(() => import("./Resume"));
 export type Route = {
   label: string;
   href: string;
-  component: ExoticComponent;
+  component: ComponentType;
 };
 
 export const routes: Route[] = [

@@ -1,5 +1,4 @@
 import { JSX } from "react";
-import Container from "./Container";
 
 const keywords = [
   {
@@ -129,9 +128,9 @@ const experiences = [
 
 const Resume = (): JSX.Element => {
   return (
-    <Container title="Resume">
+    <>
       <section className="mb-4">
-        <h1 className="text-xl text-blue-400 font-bold mb-2">Summary</h1>
+        <h1 className="text-xl text-blue font-bold mb-2">Summary</h1>
         <p className="mb-0">
           Software developer and architect with deep experience in backend
           platforms, CI/CD, and cloud. Expert in Java/Spring, platform
@@ -140,25 +139,27 @@ const Resume = (): JSX.Element => {
           frequency and reliability.
         </p>
       </section>
-      <h2 className="text-xl text-blue-400 font-bold mb-3">Technical skills</h2>
+      <h2 className="text-xl text-blue font-bold mb-3">Technical skills</h2>
       <div className="mb-3">
         {keywords.map(({ label, values }) => (
           <div className="mb-3" key={label}>
             <strong>{label}</strong>
             <div>
-              <i>{values.join(", ")}</i>
+              <i className="text-cyan">{values.join(", ")}</i>
             </div>
           </div>
         ))}
       </div>
-      <h2 className="text-xl text-blue-400 font-bold mb-3">Experience</h2>
-      {experiences.map(({ title, body }) => (
-        <div key={title}>
-          <h3 className="text-lg font-bold mb-3">{title}</h3>
-          <p className="mb-3">{body}</p>
-        </div>
-      ))}
-    </Container>
+      <h2 className="text-xl text-blue font-bold mb-3">Experience</h2>
+      <div className="space-y-6">
+        {experiences.map(({ title, body }) => (
+          <article key={title}>
+            <h3 className="text-lg text-accent font-bold mb-3">{title}</h3>
+            <p className="mb-3">{body}</p>
+          </article>
+        ))}
+      </div>
+    </>
   );
 };
 

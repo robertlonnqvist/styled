@@ -21,9 +21,13 @@ const Nav = ({ title }: { title: string }): JSX.Element => {
   };
 
   return (
-    <header className="flex justify-between flex-col md:flex-row items-center mb-6 border-b border-gray-400">
-      <a href="/" className="font-extrabold text-2xl hover:text-white mb-3">
-        <span className="text-pink-600 ">&gt;&gt;</span> Robert Lönnqvist
+    <header className="flex justify-between flex-col md:flex-row items-center mb-6 border-b border-comment">
+      <a
+        href="#/"
+        onClick={(e) => onClick(e, routes[0])}
+        className="font-extrabold text-2xl hover:text-white mb-3 focus:outline-none focus:ring-2 focus:ring-magenta rounded"
+      >
+        <span className="text-magenta ">&gt;&gt;</span> Robert Lönnqvist
       </a>
       <nav
         className="flex justify-around space-x-2 items-center mb-3"
@@ -33,10 +37,10 @@ const Nav = ({ title }: { title: string }): JSX.Element => {
         {routes.map((r, i) => (
           <a
             key={i}
-            href={r.href}
+            href={`#${r.href}`}
             onClick={(e) => onClick(e, r)}
-            className={`font-bold block px-4 py-2 hover:text-white hover:bg-gray-500 rounded-lg ${
-              title === r.label ? "bg-gray-500 text-white" : ""
+            className={`font-bold block px-4 py-2 hover:text-bg hover:bg-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-blue ${
+              title === r.label ? "bg-blue text-bg" : ""
             }`}
             aria-current={title === r.label ? "page" : undefined}
           >
@@ -47,7 +51,9 @@ const Nav = ({ title }: { title: string }): JSX.Element => {
           <a
             key={i}
             href={href}
-            className="font-bold block px-4 py-2 hover:text-white hover:bg-gray-500 rounded-lg"
+            className="font-bold block px-4 py-2 hover:text-bg hover:bg-blue rounded-lg focus:outline-none focus:ring-2 focus:ring-blue"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {label}
           </a>
