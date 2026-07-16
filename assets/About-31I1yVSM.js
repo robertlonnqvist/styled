@@ -1,1 +1,0 @@
-import{t as e}from"./index-KSRnOEHb.js";var t=e(),n=()=>(0,t.jsx)(`p`,{className:`mb-3`,children:`Software developer and architect`});export{n as default};
