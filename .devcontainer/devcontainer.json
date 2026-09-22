@@ -22,7 +22,6 @@
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "visualstudioexptteam.vscodeintellicode",
         "firsttris.vscode-jest-runner",
         "eamodio.gitlens",
         "christian-kohler.path-intellisense",
