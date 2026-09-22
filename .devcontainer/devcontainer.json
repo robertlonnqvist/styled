@@ -1,0 +1,39 @@
+{
+  "name": "Node.js Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu26.04",
+
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "2.55.0"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "24"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+      },
+
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "visualstudioexptteam.vscodeintellicode",
+        "firsttris.vscode-jest-runner",
+        "eamodio.gitlens",
+        "christian-kohler.path-intellisense",
+        "usernamehw.errorlens"
+      ]
+    }
+  },
+
+  "forwardPorts": [5173, 4173],
+
+  "remoteUser": "vscode",
+
+  "postCreateCommand": "npm ci"
+}
