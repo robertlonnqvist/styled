@@ -41,7 +41,9 @@ const About = (): JSX.Element => {
           >
             Building systems
             <br />
-            <span className="text-[var(--text-heading-secondary)]">that stand the test of time.</span>
+            <span className="text-[var(--text-heading-secondary)]">
+              that stand the test of time.
+            </span>
           </h1>
           <p className="mt-[1.625rem] max-w-[37.1875rem] font-sans text-sm leading-[1.85] text-[var(--text-secondary)] min-[481px]:text-base">
             I’m a software developer and architect focused on thoughtful
@@ -73,7 +75,9 @@ const About = (): JSX.Element => {
           <div className="flex min-h-12 items-center justify-between border-b border-[var(--border-subtle)] px-[1.0625rem] text-[0.5625rem] tracking-[0.08em] text-[var(--text-secondary)]">
             <span className="signal-dot" aria-hidden="true" />
             <span className="mr-auto">AREAS OF FOCUS</span>
-            <span className="text-[0.5625rem] text-[var(--text-muted)]">[ 01 - 03 ]</span>
+            <span className="text-[0.5625rem] text-[var(--text-muted)]">
+              [ 01 - 03 ]
+            </span>
           </div>
           <div
             className="signal-graphic relative grid min-h-[13.125rem] place-items-center overflow-hidden md:min-h-[15.3125rem]"
@@ -171,10 +175,10 @@ const About = (): JSX.Element => {
               GitHub Copilot
             </li>
             <li className="rounded-[0.3125rem] border border-[var(--border-accent)] bg-[var(--surface-accent)] px-2.5 py-2 text-[0.625rem] whitespace-nowrap text-[var(--text-accent)]">
-              Claude
+              Claude Code
             </li>
             <li className="rounded-[0.3125rem] border border-[var(--border-accent)] bg-[var(--surface-accent)] px-2.5 py-2 text-[0.625rem] whitespace-nowrap text-[var(--text-accent)]">
-              Gemini
+              Google Gemini
             </li>
           </ul>
           <span className="text-[0.5625rem] leading-[1.8] tracking-[0.1em] text-[var(--text-muted)]">

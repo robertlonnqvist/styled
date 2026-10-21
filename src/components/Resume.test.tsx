@@ -50,9 +50,11 @@ describe("Resume Component", () => {
     if (!aiSkillsCard) {
       throw new Error("AI & Machine Learning skill card was not rendered");
     }
-    expect(within(aiSkillsCard).getByText("GitHub Copilot")).toBeInTheDocument();
-    expect(within(aiSkillsCard).getByText("Claude")).toBeInTheDocument();
-    expect(within(aiSkillsCard).getByText("Gemini")).toBeInTheDocument();
+    expect(
+      within(aiSkillsCard).getByText("GitHub Copilot"),
+    ).toBeInTheDocument();
+    expect(within(aiSkillsCard).getByText("Claude Code")).toBeInTheDocument();
+    expect(within(aiSkillsCard).getByText("Google Gemini")).toBeInTheDocument();
     expect(
       screen.getByRole("heading", {
         name: "AI as an engineering aid, guided by experience.",

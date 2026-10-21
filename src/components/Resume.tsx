@@ -7,6 +7,7 @@ const keywords = [
       "Java",
       "JavaScript/ECMAScript",
       "TypeScript",
+      "Rust",
       "Python",
       "Ruby",
       "Go",
@@ -89,8 +90,8 @@ const keywords = [
     label: "AI & Machine Learning",
     values: [
       "GitHub Copilot",
-      "Claude",
-      "Gemini",
+      "Claude Code",
+      "Google Gemini",
       "AI-assisted software development",
       "Applied AI/ML exploration",
     ],
@@ -106,6 +107,7 @@ const experiences = [
     technologies: [
       "Java",
       "Spring Boot",
+      "Rust",
       "React",
       "TypeScript",
       "Kafka",
@@ -143,8 +145,8 @@ const experiences = [
       "Curity",
       "Terraform",
       "CI/CD",
-      "Claude",
-      "Gemini",
+      "Claude Code",
+      "Google Gemini",
     ],
   },
   {
@@ -354,11 +356,11 @@ const Resume = (): JSX.Element => {
           AI as an engineering aid, guided by experience.
         </h2>
         <p className="m-0 max-w-[50rem] font-sans text-[0.8125rem] leading-[1.85] text-[var(--text-secondary)]">
-          Uses tools such as GitHub Copilot, Claude, and Gemini to support
-          software development and technical exploration. AI-generated output is
-          reviewed in context and verified through engineering judgment;
-          continues to explore practical applications of AI and machine
-          learning.
+          Uses tools such as GitHub Copilot, Claude Code, and Google Gemini to
+          support software development and technical exploration. AI-generated
+          output is reviewed in context and verified through engineering
+          judgment; continues to explore practical applications of AI and
+          machine learning.
         </p>
       </section>
 

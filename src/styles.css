@@ -315,7 +315,11 @@ body::before {
 
   :root:not([data-theme="dark"]) .ai-panel {
     background:
-      radial-gradient(ellipse at 100% 0%, rgb(105 65 198 / 7%), transparent 55%),
+      radial-gradient(
+        ellipse at 100% 0%,
+        rgb(105 65 198 / 7%),
+        transparent 55%
+      ),
       linear-gradient(135deg, rgb(255 255 255 / 98%), rgb(239 243 249 / 98%));
   }
 }

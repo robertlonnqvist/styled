@@ -21,7 +21,9 @@ const App = () => {
       routes.find((r) => location.hash.substring(1) === r.href) || routes[0],
   );
   const isLight =
-    themePreference === "system" ? !systemPrefersDark : themePreference === "light";
+    themePreference === "system"
+      ? !systemPrefersDark
+      : themePreference === "light";
 
   useEffect(() => {
     if (themePreference === "system") {
