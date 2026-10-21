@@ -9,7 +9,7 @@ describe("Nav Component", () => {
   it("renders correctly with given title", () => {
     render(
       <RouteContext.Provider value={[routes[0], setRoute]}>
-        <Nav title="About" />
+        <Nav title="About" isLight={false} onToggleTheme={vi.fn()} />
       </RouteContext.Provider>,
     );
 
@@ -23,7 +23,7 @@ describe("Nav Component", () => {
   it("highlights the active link", () => {
     render(
       <RouteContext.Provider value={[routes[1], setRoute]}>
-        <Nav title="Resume" />
+        <Nav title="Resume" isLight={false} onToggleTheme={vi.fn()} />
       </RouteContext.Provider>,
     );
 
@@ -35,7 +35,7 @@ describe("Nav Component", () => {
   it("external links have correct attributes", () => {
     render(
       <RouteContext.Provider value={[routes[0], setRoute]}>
-        <Nav title="About" />
+        <Nav title="About" isLight={false} onToggleTheme={vi.fn()} />
       </RouteContext.Provider>,
     );
 

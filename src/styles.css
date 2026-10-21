@@ -3,28 +3,353 @@
 
 @theme {
   --font-mono:
-    "Jetbrains Mono", "ui-monospace", "SFMono-Regular", Menlo, Monaco, Consolas,
+    "JetBrains Mono", "ui-monospace", "SFMono-Regular", Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
+  --font-sans: Inter, "Segoe UI", sans-serif;
 
-  /* TokyoNight Night Colors */
-  --color-bg: #1a1b26;
-  --color-fg: #c0caf5;
-  --color-black: #15161e;
-  --color-red: #f7768e;
-  --color-green: #9ece6a;
-  --color-yellow: #e0af68;
-  --color-blue: #7aa2f7;
-  --color-magenta: #bb9af7;
-  --color-cyan: #7dcfff;
-  --color-white: #a9b1d6;
-
-  /* Specific accents */
-  --color-accent: #ff9e64;
-  --color-comment: #565f89;
-  --color-selection: #2e3c64;
+  --color-bg: #080d16;
+  --color-fg: #d8e1ef;
+  --color-black: #05080e;
+  --color-red: #ff7185;
+  --color-green: #9ee6c1;
+  --color-yellow: #f5c779;
+  --color-blue: #74e0d0;
+  --color-magenta: #a991ff;
+  --color-cyan: #78c8f0;
+  --color-white: #f4f7fb;
+  --color-accent: #a991ff;
+  --color-comment: #273449;
+  --color-selection: #24384a;
 }
 
-body {
-  background-color: var(--color-bg);
-  color: var(--color-fg);
+:root {
+  color-scheme: dark;
+  --signal-grid: rgb(126 157 191 / 5%);
+  --signal-orbit: rgb(116 224 208 / 26%);
+  --signal-orbit-inner: rgb(169 145 255 / 43%);
+  --signal-core-border: rgb(116 224 208 / 72%);
+  --signal-core-fill: #74e0d0;
+  --signal-core-mid: rgb(116 224 208 / 34%);
+  --signal-core-glow: rgb(116 224 208 / 45%);
+  --signal-crosshair: rgb(116 224 208 / 19%);
+  --text-primary: #f3f6fb;
+  --text-heading: #e5ebf4;
+  --text-heading-secondary: #99a7bb;
+  --text-secondary: #9ba9bd;
+  --text-muted: #8292a9;
+  --text-chip: #aebacc;
+  --text-card: #e8edf5;
+  --text-card-secondary: #8e9db2;
+  --text-accent: #c1b7ee;
+  --text-soft: #c5cede;
+  --text-nav: #a4b1c4;
+  --text-external: #8292a9;
+  --button-primary-text: #071212;
+  --button-primary-hover: #a1f3e6;
+  --border-subtle: rgb(149 174 205 / 18%);
+  --border-strong: rgb(149 174 205 / 35%);
+  --border-hover: rgb(149 174 205 / 55%);
+  --border-accent: rgb(169 145 255 / 38%);
+  --surface-hover: rgb(149 174 205 / 8%);
+  --surface-accent: rgb(169 145 255 / 9%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --signal-grid: rgb(62 84 110 / 18%);
+    --signal-orbit: rgb(0 107 94 / 76%);
+    --signal-orbit-inner: rgb(105 65 198 / 72%);
+    --signal-core-border: #006b5e;
+    --signal-core-fill: #006b5e;
+    --signal-core-mid: rgb(0 107 94 / 60%);
+    --signal-core-glow: rgb(0 107 94 / 35%);
+    --signal-crosshair: rgb(0 107 94 / 55%);
+    color-scheme: light;
+    --color-bg: #f6f8fb;
+    --color-fg: #202b3a;
+    --color-blue: #006b5e;
+    --color-magenta: #6941c6;
+    --color-accent: #6941c6;
+    --color-comment: #596779;
+    --color-selection: #dce9e6;
+    --text-primary: #17212f;
+    --text-heading: #243247;
+    --text-heading-secondary: #46566b;
+    --text-secondary: #46566b;
+    --text-muted: #506178;
+    --text-chip: #46566b;
+    --text-card: #26364a;
+    --text-card-secondary: #46566b;
+    --text-accent: #4e328e;
+    --text-soft: #35465b;
+    --text-nav: #35465b;
+    --text-external: #46566b;
+    --button-primary-text: #ffffff;
+    --button-primary-hover: #00574d;
+    --border-subtle: rgb(37 55 78 / 22%);
+    --border-strong: rgb(37 55 78 / 38%);
+    --border-hover: rgb(37 55 78 / 58%);
+    --border-accent: rgb(105 65 198 / 38%);
+    --surface-hover: rgb(37 55 78 / 7%);
+    --surface-accent: rgb(105 65 198 / 8%);
+  }
+}
+
+:root[data-theme="light"] {
+  --signal-grid: rgb(62 84 110 / 18%);
+  --signal-orbit: rgb(0 107 94 / 76%);
+  --signal-orbit-inner: rgb(105 65 198 / 72%);
+  --signal-core-border: #006b5e;
+  --signal-core-fill: #006b5e;
+  --signal-core-mid: rgb(0 107 94 / 60%);
+  --signal-core-glow: rgb(0 107 94 / 35%);
+  --signal-crosshair: rgb(0 107 94 / 55%);
+  color-scheme: light;
+  --color-bg: #f6f8fb;
+  --color-fg: #202b3a;
+  --color-blue: #006b5e;
+  --color-magenta: #6941c6;
+  --color-accent: #6941c6;
+  --color-comment: #596779;
+  --color-selection: #dce9e6;
+  --text-primary: #17212f;
+  --text-heading: #243247;
+  --text-heading-secondary: #46566b;
+  --text-secondary: #46566b;
+  --text-muted: #506178;
+  --text-chip: #46566b;
+  --text-card: #26364a;
+  --text-card-secondary: #46566b;
+  --text-accent: #4e328e;
+  --text-soft: #35465b;
+  --text-nav: #35465b;
+  --text-external: #46566b;
+  --button-primary-text: #ffffff;
+  --button-primary-hover: #00574d;
+  --border-subtle: rgb(37 55 78 / 22%);
+  --border-strong: rgb(37 55 78 / 38%);
+  --border-hover: rgb(37 55 78 / 58%);
+  --border-accent: rgb(105 65 198 / 38%);
+  --surface-hover: rgb(37 55 78 / 7%);
+  --surface-accent: rgb(105 65 198 / 8%);
+}
+
+@layer base {
+  :root {
+    font-family: var(--font-mono);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-optical-sizing: auto;
+    font-weight: 400;
+  }
+
+  html {
+    min-width: 20rem;
+    min-height: 100%;
+    background: var(--color-bg);
+  }
+
+  body {
+    min-width: 20rem;
+    min-height: 100vh;
+    margin: 0;
+    background:
+      radial-gradient(ellipse at 80% 2%, var(--glow-blue), transparent 31rem),
+      radial-gradient(ellipse at 2% 46%, var(--glow-violet), transparent 34rem),
+      var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 0.125rem solid var(--color-blue);
+    outline-offset: 0.25rem;
+  }
+}
+
+body::before {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  background-image:
+    linear-gradient(rgb(126 157 191 / 3%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(126 157 191 / 3%) 1px, transparent 1px);
+  background-size: 3rem 3rem;
+  content: "";
+  mask-image: linear-gradient(to bottom, black, transparent 78%);
+  pointer-events: none;
+}
+
+.signal-card {
+  background:
+    radial-gradient(circle at 50% 46%, rgb(59 130 140 / 13%), transparent 48%),
+    linear-gradient(145deg, rgb(17 27 42 / 88%), rgb(10 16 27 / 88%));
+}
+
+.signal-dot {
+  width: 0.375rem;
+  height: 0.375rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background: var(--color-blue);
+  box-shadow: 0 0 0.625rem rgb(116 224 208 / 65%);
+}
+
+.signal-graphic {
+  background-image:
+    linear-gradient(var(--signal-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--signal-grid) 1px, transparent 1px);
+  background-size: 1.625rem 1.625rem;
+}
+
+.signal-orbit {
+  position: absolute;
+  display: block;
+  border: 1px solid var(--signal-orbit);
+  border-radius: 50%;
+}
+
+.signal-orbit-outer {
+  width: 11rem;
+  height: 11rem;
+  box-shadow:
+    0 0 2.625rem rgb(116 224 208 / 8%),
+    inset 0 0 2.625rem rgb(116 224 208 / 5%);
+}
+
+.signal-orbit-inner {
+  width: 7rem;
+  height: 7rem;
+  border-color: var(--signal-orbit-inner);
+  transform: rotateX(67deg) rotate(-28deg);
+}
+
+.signal-core {
+  width: 2.125rem;
+  height: 2.125rem;
+  border: 1px solid var(--signal-core-border);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    var(--signal-core-fill) 0,
+    var(--signal-core-mid) 26%,
+    transparent 72%
+  );
+  box-shadow: 0 0 2rem var(--signal-core-glow);
+}
+
+.signal-crosshair {
+  position: absolute;
+  background: var(--signal-crosshair);
+}
+
+.signal-crosshair-x {
+  width: 74%;
+  height: 1px;
+}
+
+.signal-crosshair-y {
+  width: 1px;
+  height: 74%;
+}
+
+.ai-panel {
+  background:
+    radial-gradient(ellipse at 100% 0%, rgb(169 145 255 / 9%), transparent 55%),
+    linear-gradient(135deg, rgb(18 25 41 / 93%), rgb(11 17 29 / 93%));
+}
+
+.nav-active.bg-blue {
+  border-color: var(--active-border);
+  background: var(--active-surface);
+  color: var(--color-blue);
+}
+
+.strength-card {
+  background: var(--strength-surface);
+}
+
+.resume-card {
+  background: var(--resume-surface);
+}
+
+:root {
+  --glow-blue: rgb(33 65 91 / 19%);
+  --glow-violet: rgb(46 40 89 / 12%);
+  --active-border: rgb(116 224 208 / 35%);
+  --active-surface: rgb(116 224 208 / 13%);
+  --strength-surface: linear-gradient(
+    145deg,
+    rgb(18 27 41 / 82%),
+    rgb(11 17 28 / 82%)
+  );
+  --resume-surface: rgb(15 23 36 / 72%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --glow-blue: rgb(57 133 170 / 9%);
+    --glow-violet: rgb(105 65 198 / 6%);
+    --active-border: rgb(0 107 94 / 35%);
+    --active-surface: rgb(0 107 94 / 10%);
+    --strength-surface: linear-gradient(
+      145deg,
+      rgb(255 255 255 / 95%),
+      rgb(239 244 249 / 95%)
+    );
+    --resume-surface: rgb(255 255 255 / 82%);
+  }
+
+  :root:not([data-theme="dark"]) .signal-card {
+    background:
+      radial-gradient(circle at 50% 46%, rgb(0 107 94 / 8%), transparent 48%),
+      linear-gradient(145deg, rgb(255 255 255 / 96%), rgb(238 243 249 / 96%));
+  }
+
+  :root:not([data-theme="dark"]) .ai-panel {
+    background:
+      radial-gradient(ellipse at 100% 0%, rgb(105 65 198 / 7%), transparent 55%),
+      linear-gradient(135deg, rgb(255 255 255 / 98%), rgb(239 243 249 / 98%));
+  }
+}
+
+:root[data-theme="light"] {
+  --glow-blue: rgb(57 133 170 / 9%);
+  --glow-violet: rgb(105 65 198 / 6%);
+  --active-border: rgb(0 107 94 / 35%);
+  --active-surface: rgb(0 107 94 / 10%);
+  --strength-surface: linear-gradient(
+    145deg,
+    rgb(255 255 255 / 95%),
+    rgb(239 244 249 / 95%)
+  );
+  --resume-surface: rgb(255 255 255 / 82%);
+}
+
+:root[data-theme="light"] .signal-card {
+  background:
+    radial-gradient(circle at 50% 46%, rgb(0 107 94 / 8%), transparent 48%),
+    linear-gradient(145deg, rgb(255 255 255 / 96%), rgb(238 243 249 / 96%));
+}
+
+:root[data-theme="light"] .ai-panel {
+  background:
+    radial-gradient(ellipse at 100% 0%, rgb(105 65 198 / 7%), transparent 55%),
+    linear-gradient(135deg, rgb(255 255 255 / 98%), rgb(239 243 249 / 98%));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
